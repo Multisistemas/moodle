@@ -11,10 +11,102 @@ $border-radius: 6px;
 .activityinstance a {
 	color: #ffffff;
 	text-decoration: none;
-	padding-right: 20px;
+	padding-right: 6px; 
 }
 
 .activityinstance a:hover {
 	text-decoration:none;
 	color: #cccccc;
+}
+
+.activityinstance img {
+	display: none;
+}
+
+.navbar-light {
+	background-color: #146aae !important; 
+	border-bottom: 1px solid #146aae !important;
+}
+
+.list-group-item:first-child {
+	background-color: #146aae;
+	color: #ffffff;
+}
+
+.list-group-item:first-child:hover {
+	background-color: #167bcc;
+	color: #ffffff;
+}
+
+.list-group-item-action:hover {
+	background-color: #167bcc !important;
+	color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #ffffff !important;
+}
+
+#dropdown-1 {
+  color: #ffffff !important;
+}
+
+#dropdown-1:hover {
+	color: #ffffff !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+	background-color: #146aae;
+	color: #ffffff;
+}
+
+.navbar-light .navbar-brand.has-logo {
+	color: #ffffff !important;
+}
+
+.navbar-light .navbar-brand.has-logo:hover {
+	color: #ffffff !important;
+}
+
+.navbar-brand {
+	padding-top: 0 !important;
+}
+
+.card {
+	background-color: rgb(236, 238, 239) !important;
+	border-radius: 8px !important;
+}
+
+.usermenu .login a {
+	color: #ffffff !important;
+}
+
+span .login {
+	color: #ffffff !important;
+}
+
+iframe {
+	width: 100% !important;
+}
+
+img.userpicture {
+	max-width: 50px !important;
+	max-height: 50px !important;
+}
+
+.icon {
+	width: 18px !important;
+	height: 18px !important;
+}
+
+.usertext {
+	color: #ffffff !important;
+}
+
+.p-a-1 {
+	display: none !important;
 }
