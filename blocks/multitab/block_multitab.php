@@ -71,9 +71,6 @@ class block_multitab extends block_base {
                 <a class="nav-link" data-toggle="tab" href="#erp" role="tab">ERP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#pms" role="tab">PMS</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#drive" role="tab">Drive</a>
               </li>
             </ul>
@@ -84,9 +81,6 @@ class block_multitab extends block_base {
               </div>
               <div class="tab-pane fade" id="erp" role="tabpanel">
                 <iframe src="https://www.mseicorp.com/erp/index.php?mainmenu=home" style="width:100%; height:800px;" height="800" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
-              </div>
-              <div class="tab-pane fade" id="pms" role="tabpanel">
-                <iframe src="https://mseicorp.com/pms" style="width:100%; height:800px;" height="800" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
               </div>
               <div class="tab-pane fade" id="drive" role="tabpanel">
                 <iframe src="https://drive.google.com/drive/" style="width:100%; height:800px;" height="800" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>

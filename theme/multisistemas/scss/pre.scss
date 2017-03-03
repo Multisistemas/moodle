@@ -1,7 +1,5 @@
 // Pre SCSS in Theme Multisistemas
 
-/*$border-radius: 6px;*/
-
 .activityinstance {
 	background: #146aae;
   padding: 10px 20px 10px 10px;
@@ -76,11 +74,6 @@
 	padding-top: 0 !important;
 }
 
-.card {
-	background-color: rgb(236, 238, 239) !important;
-	border-radius: 8px !important;
-}
-
 .usermenu .login a {
 	color: #ffffff !important;
 }
@@ -91,6 +84,8 @@ span .login {
 
 iframe {
 	width: 100% !important;
+	overflow-x: auto;
+	overflow-y: auto; 
 }
 
 img.userpicture {
@@ -107,6 +102,94 @@ img.userpicture {
 	color: #ffffff !important;
 }
 
-.p-a-1 {
-	/*display: none !important;*/
+#nav-drawer {
+	padding: 0 !important;
+	border-right: 1px solid #ddd !important;
 }
+
+.list-group-item:first-child {
+	border-radius: 0 !important;
+}
+
+.list-group-item:last-child {
+	border-radius: 0 !important;
+}
+
+.card {
+	border-radius: 0 !important;
+	background-color: #ffffff !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+	border: none !important;
+}
+
+#page.container-fluid {
+	padding: 0px !important;
+	background-color: #ffffff !important;
+	position: relative;
+}
+
+#btn-show-hide {
+    height: 44px;
+    width: auto;
+    padding: 5px;
+    background: #ffffff;
+    color: #146aae;
+    border: 1px solid #146aae;
+    outline: 0 !important;
+    border-radius: 0;
+}
+
+.block_multitab > .card-block {
+	padding: 0px !important;
+}
+
+.block_multitab {
+	margin-bottom: 0 !important;
+}
+
+#btn-show-hide-two {
+	height: 44px;
+  width: auto;
+  padding: 5px;
+  background: #ffffff;
+  color: #146aae;
+  border: 1px solid #146aae;
+  outline: 0 !important;
+  border-radius: 0;
+  float: right;
+}
+
+.m-r-l {
+	margin-right: 0px !important;
+}
+
+#sp-right {
+	display: inline-block;
+	float: right;
+}
+
+#action-menu-right {
+	right: 0px;
+  top: 33px;
+  position: absolute;
+  z-index: 999;
+  left: 80%;
+  display: none;
+  border-color: #146aae;
+}
+
+#action-menu-right > .dropdown-item a {
+	color: #333 !important;
+	text-decoration: none !important;
+}
+
+#action-menu-right > .dropdown-item:hover {
+	color: #ffffff;
+}
+
+.p-a-1 {
+	display: none !important;
+}
+
+

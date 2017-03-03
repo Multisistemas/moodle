@@ -1,3 +1,18 @@
+window.onload = function (){
+	// For button hide-show left
+	require(['jquery'], function($){
+		var span = $("#rows");
+		var panel = $("nav-drawer");
+
+		if (panel.attr("aria-hidden") == "true" ){
+			span.text('>>');
+		} else {
+			span.text('<<');
+		}
+	});
+}
+
+// Button hide-show left
 require(['jquery'], function($){
 	$("button.pull-xs-left").click(function(e){
 		var span = $("#rows");
@@ -8,7 +23,26 @@ require(['jquery'], function($){
 		} else {
 			span.text('<<');
 		}
+	});
 });
+
+// Button hide-show right
+require(['jquery'], function($){
+	$("#btn-show-hide-two").click(function(e){
+		var span = $("#rows2");
+		var	btn = $("btn-show-hide-two");
+		var menu = $("#action-menu-right");
+
+		if (menu.css("display") == "none" ){
+			span.text('>>');
+			menu.css("display","inline-block");
+		} else {
+			span.text('<<');
+			menu.css("display","none");
+		}
+	});
+});
+
 
 /*$("#wiki-tab").click(function(e){
 		
@@ -58,6 +92,6 @@ require(['jquery'], function($){
 		  xhr.send();
 
 		  
-	});*/
+	});
 
-});
+});*/
