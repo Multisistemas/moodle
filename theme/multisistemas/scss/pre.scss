@@ -1,0 +1,195 @@
+// Pre SCSS in Theme Multisistemas
+
+.activityinstance {
+	background: #146aae;
+  padding: 10px 20px 10px 10px;
+  border-radius: 5px;
+}
+
+.activityinstance a {
+	color: #ffffff;
+	text-decoration: none;
+	padding-right: 6px; 
+}
+
+.activityinstance a:hover {
+	text-decoration:none;
+	color: #cccccc;
+}
+
+.activityinstance img {
+	display: none;
+}
+
+.navbar-light {
+	background-color: #146aae !important; 
+	border-bottom: 1px solid #146aae !important;
+}
+
+.list-group-item:first-child {
+	background-color: #146aae;
+	color: #ffffff;
+}
+
+.list-group-item:first-child:hover {
+	background-color: #167bcc;
+	color: #ffffff;
+}
+
+.list-group-item-action:hover {
+	background-color: #167bcc !important;
+	color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #ffffff !important;
+}
+
+#dropdown-1 {
+  color: #ffffff !important;
+}
+
+#dropdown-1:hover {
+	color: #ffffff !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+	background-color: #146aae;
+	color: #ffffff;
+}
+
+.navbar-light .navbar-brand.has-logo {
+	color: #ffffff !important;
+}
+
+.navbar-light .navbar-brand.has-logo:hover {
+	color: #ffffff !important;
+}
+
+.navbar-brand {
+	padding-top: 0 !important;
+}
+
+.usermenu .login a {
+	color: #ffffff !important;
+}
+
+span .login {
+	color: #ffffff !important;
+}
+
+iframe {
+	width: 100% !important;
+	overflow-x: auto;
+	overflow-y: auto; 
+}
+
+img.userpicture {
+	max-width: 50px !important;
+	max-height: 50px !important;
+}
+
+.icon {
+	width: 18px !important;
+	height: 18px !important;
+}
+
+.usertext {
+	color: #ffffff !important;
+}
+
+#nav-drawer {
+	padding: 0 !important;
+	border-right: 1px solid #ddd !important;
+}
+
+.list-group-item:first-child {
+	border-radius: 0 !important;
+}
+
+.list-group-item:last-child {
+	border-radius: 0 !important;
+}
+
+.card {
+	border-radius: 0 !important;
+	background-color: #ffffff !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+	border: none !important;
+}
+
+#page.container-fluid {
+	padding: 0px !important;
+	background-color: #ffffff !important;
+	position: relative;
+}
+
+#btn-show-hide {
+    height: 44px;
+    width: auto;
+    padding: 5px;
+    background: #ffffff;
+    color: #146aae;
+    border: 1px solid #146aae;
+    outline: 0 !important;
+    border-radius: 0;
+}
+
+.block_multitab > .card-block {
+	padding: 0px !important;
+}
+
+.block_multitab {
+	margin-bottom: 0 !important;
+}
+
+#btn-show-hide-two {
+	height: 44px;
+  width: auto;
+  padding: 5px;
+  background: #ffffff;
+  color: #146aae;
+  border: 1px solid #146aae;
+  outline: 0 !important;
+  border-radius: 0;
+  float: right;
+}
+
+.m-r-l {
+	margin-right: 0px !important;
+}
+
+#sp-right {
+	display: inline-block;
+	float: right;
+}
+
+#action-menu-right {
+	right: 0px;
+  top: 33px;
+  position: absolute;
+  z-index: 999;
+  left: 80%;
+  display: none;
+  border-color: #146aae;
+}
+
+#action-menu-right > .dropdown-item a {
+	color: #333 !important;
+	text-decoration: none !important;
+}
+
+#action-menu-right > .dropdown-item:hover {
+	color: #ffffff;
+}
+
+.p-a-1 {
+	display: none !important;
+}
+
+

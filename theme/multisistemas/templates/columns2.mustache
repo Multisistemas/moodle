@@ -1,0 +1,174 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_multisistemas/columns2
+
+    Admin time setting template.
+
+    Boost 2 column layout template.
+
+    Context variables required for this template:
+    * sitename - The name of the site
+    * output - The core renderer for the page
+    * bodyattributes - attributes for the body tag as a string of html attributes
+    * sidepreblocks - HTML for the blocks
+    * hasblocks - true if there are blocks on this page
+    * navdraweropen - true if the nav drawer should be open on page load
+    * regionmainsettingsmenu - HTML for the region main settings menu
+    * hasregionmainsettingsmenu - There is a region main settings menu on this page.
+
+    Example context (json):
+    {
+        "sitename": "Moodle",
+        "output": {
+            "doctype": "<!DOCTYPE html>",
+            "page_title": "Test page",
+            "favicon": "favicon.ico",
+            "main_content": "<h1>Headings make html validators happier</h1>"
+         },
+        "bodyattributes":"",
+        "sidepreblocks": "<h2>Blocks html goes here</h2>",
+        "hasblocks":true,
+        "navdraweropen":true,
+        "regionmainsettingsmenu": "",
+        "hasregionmainsettingsmenu": false
+    }
+}}
+{{{ output.doctype }}}
+<html {{{ output.htmlattributes }}}>
+<head>
+    <title>{{{ output.page_title }}}</title>
+    <link rel="shortcut icon" href="{{{ output.favicon }}}" />
+    {{{ output.standard_head_html }}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body {{{ bodyattributes }}}>
+
+<div id="page-wrapper">
+
+    {{{ output.standard_top_of_body_html }}}
+
+    {{>theme_multisistemas/header}}
+
+    <div id="page" class="container-fluid">
+
+    <div data-region="drawer-toggle">
+            <span id="sp-left"><button id="btn-show-hide" aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true" id="rows">>></span><span class="sr-only">{{#str}}expand, core{{/str}}</span>
+            </button></span>
+            <span id="sp-right"><button id="btn-show-hide-two" type="button" class="btn btn-secondary"><span aria-hidden="true" id="rows2"><<</span></button></span>
+    </div>
+
+    <div class="dropdown-menu" id="action-menu-right" data-rel="menu-content" aria-labelledby="action-menu-toggle-2" role="menu" data-align="tr-br">
+                <div class="dropdown-item">
+
+                    <a href="{{{ config.wwwroot }}}/course/view.php?id=1&amp;sesskey=6CrITWPDws&amp;edit=on" id="action_link58b8a3a4b96fb13" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Fedit">
+                Modo edición</a>
+
+
+                </div><div class="dropdown-item">
+
+                    <a href="{{{ config.wwwroot }}}/admin/settings.php?section=frontpagesettings" id="action_link58b8a3a4b96fb14" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Fsettings">
+                Editar ajustes</a>
+
+
+                </div><div class="dropdown-item">
+
+                    <a href="{{{ config.wwwroot }}}/filter/manage.php?contextid=2" id="action_link58b8a3a4b96fb15" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Ffilter">
+                Filtros</a>
+
+
+                </div><div class="dropdown-item">
+
+                    <a href="{{{ config.wwwroot }}}/backup/backup.php?id=1" id="action_link58b8a3a4b96fb16" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Fbackup">
+                Respaldos</a>
+
+
+                </div><div class="dropdown-item">
+
+                    <a href="{{{ config.wwwroot }}}/backup/restorefile.php?contextid=2" id="action_link58b8a3a4b96fb17" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Frestore">
+                Restauración</a>
+
+
+                </div><div class="dropdown-item">
+
+                    <a href="{{{ config.wwwroot }}}/course/admin.php?courseid=1" id="action_link58b8a3a4b96fb18" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Fmore">
+                Más</a>
+
+
+                </div>
+        </div>
+
+        {{{ output.full_header }}}
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                {{#hasregionmainsettingsmenu}}
+                <div id="region-main-settings-menu" class="hidden-print {{#hasblocks}}has-blocks{{/hasblocks}}">
+                    <div> {{{ output.region_main_settings_menu }}} </div>
+                </div>
+                {{/hasregionmainsettingsmenu}}
+                <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
+                    <div class="card card-block">
+                    {{#hasregionmainsettingsmenu}}
+                        <div class="region_main_settings_menu_proxy"></div>
+                    {{/hasregionmainsettingsmenu}}
+                    {{{ output.course_content_header }}}
+                    {{{ output.main_content }}}
+                    {{{ output.course_content_footer }}}
+                    </div>
+                </section>
+                {{#hasblocks}}
+                <section data-region="blocks-column" class="hidden-print">
+                    {{{ sidepreblocks }}}
+                </section>
+                {{/hasblocks}}
+            </div>
+        </div>
+    </div>
+    {{> theme_multisistemas/nav-drawer }}
+</div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer">{{{ output.course_footer }}}</div>
+
+        {{# output.page_doc_link }}
+            <p class="helplink">{{{ output.page_doc_link }}}</p>
+        {{/ output.page_doc_link }}
+
+        {{{ output.login_info }}}
+        {{{ output.home_link }}}
+        <nav class="nav navbar-nav hidden-lg-up">
+            {{# output.custom_menu_flat }}
+                <ul class="list-unstyled p-t-1">
+                    {{> theme_multisistemas/custom_menu_footer }}
+                </ul>
+            {{/ output.custom_menu_flat }}
+        </nav>
+        {{{ output.standard_footer_html }}}
+        {{{ output.standard_end_of_body_html }}}
+    </div>
+</footer>
+
+</body>
+</html>
+{{#js}}
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+{{/js}}
