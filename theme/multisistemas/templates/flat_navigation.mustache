@@ -67,13 +67,16 @@
             {{#is_section}}
                 <div class="media">
                     <span class="media-left">
-                        {{#pix}}i/folder{{/pix}}
                     </span>
                     <span class="media-body">{{{text}}}</span>
                 </div>
             {{/is_section}}
             {{^is_section}}
-                {{{text}}}
+                <div class="media">
+                    <span class="media-left">
+                    </span>
+                    <span class="media-body">{{{text}}}</span>
+                </div>
             {{/is_section}}
         </div>
     </a>
@@ -85,6 +88,7 @@
                 {{#pix}}i/folder{{/pix}}
             {{/is_section}}
             {{{text}}}
+
         </div>
     </div>
     {{/action}}

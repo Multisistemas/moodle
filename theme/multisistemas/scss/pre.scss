@@ -1,3 +1,8 @@
+	/**
+   * @copyright Luis Medrano (Multisistemas 2017)
+   * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+   */.
+
 // Pre SCSS in Theme Multisistemas
 
 .activityinstance {
@@ -130,9 +135,8 @@ img.userpicture {
 }
 
 #btn-show-hide {
-    height: 44px;
     width: auto;
-    padding: 5px;
+    padding: 0 5px;
     background: #ffffff;
     color: #146aae;
     border: 1px solid #146aae;
@@ -148,18 +152,6 @@ img.userpicture {
 	margin-bottom: 0 !important;
 }
 
-#btn-show-hide-two {
-	height: 44px;
-  width: auto;
-  padding: 5px;
-  background: #ffffff;
-  color: #146aae;
-  border: 1px solid #146aae;
-  outline: 0 !important;
-  border-radius: 0;
-  float: right;
-}
-
 .m-r-l {
 	margin-right: 0px !important;
 }
@@ -167,16 +159,6 @@ img.userpicture {
 #sp-right {
 	display: inline-block;
 	float: right;
-}
-
-#action-menu-right {
-	right: 0px;
-  top: 33px;
-  position: absolute;
-  z-index: 999;
-  left: 80%;
-  display: none;
-  border-color: #146aae;
 }
 
 #action-menu-right > .dropdown-item a {
@@ -188,8 +170,65 @@ img.userpicture {
 	color: #ffffff;
 }
 
-.p-a-1 {
-	//display: none !important;
+.maincalendar .calendarmonth td, .maincalendar .calendarmonth th {
+	border: 1px solid #f80 !important;
 }
 
+.calendarmonth > thead {
+	background-color: rgba(255, 136, 0, 0.3) !important;
+}
 
+.page-context-header {
+	display: none !important;
+}
+
+#page-header {
+	display: inline;
+  padding: 0px !important;
+  width: 50%;
+  float: right;
+}
+
+#page-header > .col-xs-12 {
+	padding: 0px !important;
+}
+
+.fel-background {
+	background-size: cover;
+}
+
+#page-login {
+	opacity: 0.7;
+}
+
+#page-login:hover {
+	opacity: 1;
+}
+
+.list-group-item {
+	padding: 10px 5px !important;
+}
+
+.dropdown-item a {
+	text-decoration: none !important;
+}
+
+.dropdown-item a:hover {
+	color: #ffffff !important;
+}
+
+.block_online_users, .block_calendar_month, .block_calendar_upcoming, .block_birthday {
+	border: 1px solid #f2f2f2 !important;
+}
+
+.m-l-1 {
+	margin-left: 0 !important; 
+}
+
+#region-main-box {
+	top: -22px !important;
+}
+
+.card-block {
+	padding: 5px 20px 25px 10px !important;
+}

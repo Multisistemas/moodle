@@ -43,7 +43,7 @@
         "bodyattributes":"",
         "sidepreblocks": "<h2>Blocks html goes here</h2>",
         "hasblocks":true,
-        "navdraweropen":true,
+        "navdraweropen":false,
         "regionmainsettingsmenu": "",
         "hasregionmainsettingsmenu": false
     }
@@ -68,50 +68,9 @@
     <div id="page" class="container-fluid">
 
     <div data-region="drawer-toggle">
-            <span id="sp-left"><button id="btn-show-hide" aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true" id="rows">>></span><span class="sr-only">{{#str}}expand, core{{/str}}</span>
+            <span id="sp-left"><button id="btn-show-hide" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true" id="rows"><<</span><span class="sr-only">{{#str}}expand, core{{/str}}</span>
             </button></span>
-            <span id="sp-right"><button id="btn-show-hide-two" type="button" class="btn btn-secondary"><span aria-hidden="true" id="rows2"><<</span></button></span>
     </div>
-
-    <div class="dropdown-menu" id="action-menu-right" data-rel="menu-content" aria-labelledby="action-menu-toggle-2" role="menu" data-align="tr-br">
-                <div class="dropdown-item">
-
-                    <a href="{{{ config.wwwroot }}}/course/view.php?id=1&amp;sesskey=6CrITWPDws&amp;edit=on" id="action_link58b8a3a4b96fb13" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Fedit">
-                Modo edición</a>
-
-
-                </div><div class="dropdown-item">
-
-                    <a href="{{{ config.wwwroot }}}/admin/settings.php?section=frontpagesettings" id="action_link58b8a3a4b96fb14" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Fsettings">
-                Editar ajustes</a>
-
-
-                </div><div class="dropdown-item">
-
-                    <a href="{{{ config.wwwroot }}}/filter/manage.php?contextid=2" id="action_link58b8a3a4b96fb15" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Ffilter">
-                Filtros</a>
-
-
-                </div><div class="dropdown-item">
-
-                    <a href="{{{ config.wwwroot }}}/backup/backup.php?id=1" id="action_link58b8a3a4b96fb16" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Fbackup">
-                Respaldos</a>
-
-
-                </div><div class="dropdown-item">
-
-                    <a href="{{{ config.wwwroot }}}/backup/restorefile.php?contextid=2" id="action_link58b8a3a4b96fb17" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Frestore">
-                Restauración</a>
-
-
-                </div><div class="dropdown-item">
-
-                    <a href="{{{ config.wwwroot }}}/course/admin.php?courseid=1" id="action_link58b8a3a4b96fb18" class="" role="menuitem"><img class="icon " alt="" src="{{{ config.wwwroot }}}/theme/image.php?theme=multisistemas&amp;component=core&amp;image=i%2Fmore">
-                Más</a>
-
-
-                </div>
-        </div>
 
         {{{ output.full_header }}}
 

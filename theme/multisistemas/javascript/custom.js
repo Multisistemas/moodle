@@ -2,12 +2,65 @@ window.onload = function (){
 	// For button hide-show left
 	require(['jquery'], function($){
 		var span = $("#rows");
-		var panel = $("nav-drawer");
+		var panel = $("#nav-drawer");
 
 		if (panel.attr("aria-hidden") == "true" ){
 			span.text('>>');
 		} else {
 			span.text('<<');
+		}
+	});
+
+}
+
+function view_icon(){
+	require(['jquery'], function($){
+
+		var media_left = document.getElementsByClassName("media-left");
+		var media_body = document.getElementsByClassName("media-body");
+		
+		var array1 = jQuery.makeArray(media_body);
+		var array2 = jQuery.makeArray(media_left);
+	
+		for (i in array1) {
+			var temp = $(array2[i]);
+    	if (array1[i].innerHTML == "Home" || array1[i].innerHTML == "Página Principal") {
+    		var img = "<img class='icon smallicon' src='../pix/i/home.svg'>";
+    		array2[i].innerHTML = img;
+    		temp.fadeIn("slow");
+    	} else if (array1[i].innerHTML == "Dashboard" || array1[i].innerHTML == "Área personal") {
+    		var img = "<img class='icon smallicon' src='../pix/i/course.svg'>";
+    		array2[i].innerHTML = img;
+    		temp.fadeIn("slow");
+    	} else if (array1[i].innerHTML == "Calendar" || array1[i].innerHTML == "Calendario") {
+    		var img = "<img class='icon smallicon' src='../pix/i/calendar-new.svg'>";
+    		array2[i].innerHTML = img;
+    		temp.fadeIn("slow");
+    	} else if (array1[i].innerHTML == "Private files" || array1[i].innerHTML == "Ficheros privados") {
+    		var img = "<img class='icon smallicon' src='../pix/i/upload-folder.svg'>";
+    		array2[i].innerHTML = img;
+    		temp.fadeIn("slow");
+    	} else if (array1[i].innerHTML == "Site administration" || array1[i].innerHTML == "Administración del sitio") {
+    		var img = "<img class='icon smallicon' src='../pix/i/cog-wheel.svg'>";
+    		array2[i].innerHTML = img;
+    		temp.fadeIn("slow");
+    	} else {
+    		var img = "<img class='icon smallicon' src='../pix/i/test.svg'>";
+    		array2[i].innerHTML = img;
+    		temp.fadeIn("slow");
+    	}
+		}
+	});
+}
+
+function hide_icon(){
+	require(['jquery'], function($){
+		var media_left = document.getElementsByClassName("media-left");
+		var array = jQuery.makeArray(media_left);
+
+		for (i in array){
+			var temp = $(array[i]);
+			temp.fadeOut("fast");
 		}
 	});
 }
@@ -17,12 +70,51 @@ require(['jquery'], function($){
 	$("button.pull-xs-left").click(function(e){
 		var span = $("#rows");
 		var	btn = $("button.pull-xs-left");
+		var panel = $("#nav-drawer");
+    var body = $(".drawer-open-left");
+    var media_body = document.getElementsByClassName("media-body");
+		var array = jQuery.makeArray(media_body);
+    
+    if (panel.width() == 284){
 
-		if (btn.attr("aria-expanded") == "true" ){
 			span.text('>>');
-		} else {
+			panel.css({
+				'width' : '50px',
+				'transition' : 'all 0.7s ease'
+			});
+			body.css({
+				'margin-left': '50px',
+				'transition' : 'all 0.7s ease'
+			});
+
+			for (i in array) {
+				var temp = $(array[i]);
+				temp.fadeOut("fast");
+			}
+
+			view_icon();
+
+		} else if (panel.width() == 49) {
+
+			hide_icon();
+
 			span.text('<<');
+			panel.css({
+				'width' : '285px',
+				'transition' : 'all 0.7s ease'
+			});
+			body.css({
+				'margin-left': '285px',
+				'transition' : 'all 0.7s ease'
+			});
+
+			for (i in array) {
+				var temp = $(array[i]);
+				temp.fadeIn("slow");
+			}
+
 		}
+	
 	});
 });
 
