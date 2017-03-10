@@ -76,7 +76,8 @@ require(['jquery'], function($){
 		var array = jQuery.makeArray(media_body);
     
     if (panel.width() == 285 || panel.width() == 284 ){
-
+    	alert("funciona");
+    	console.log(panel.width());
 			span.text('>>');
 			panel.css({
 				'width' : '50px',
