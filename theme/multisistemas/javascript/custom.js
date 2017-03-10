@@ -74,8 +74,7 @@ require(['jquery'], function($){
     var body = $(".drawer-open-left");
     var media_body = document.getElementsByClassName("media-body");
 		var array = jQuery.makeArray(media_body);
-    alert("funciona");
-    console.log(panel.width());
+
     if (panel.width() >= 284 && panel.width() <= 285 ){
 
 			span.text('>>');
