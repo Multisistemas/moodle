@@ -76,7 +76,7 @@ require(['jquery'], function($){
 		var array = jQuery.makeArray(media_body);
     alert("funciona");
     console.log(panel.width());
-    if (panel.width() == 285 || panel.width() == 284 ){
+    if (panel.width() >= 284 && panel.width() <= 285 ){
 
 			span.text('>>');
 			panel.css({
@@ -95,7 +95,7 @@ require(['jquery'], function($){
 
 			view_icon();
 
-		} else if (panel.width() == 50 || panel.width() == 49) {
+		} else if (panel.width() >= 49 || panel.width() <= 50) {
 
 			hide_icon();
 
