@@ -69,6 +69,9 @@ function hide_icon(){
 require(['jquery'], function($){
 	$("button.pull-xs-left").click(function(e){
 		var span = $("#rows");
+		var span_container = $("#sp-left");
+		var page_header = $("#page-header");
+		var div_region_main_box = $("#region-main-box");
 		var	btn = $("button.pull-xs-left");
 		var panel = $("#nav-drawer");
     var body = $(".drawer-open-left");

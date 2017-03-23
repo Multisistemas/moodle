@@ -140,6 +140,7 @@ img.userpicture {
 
 #btn-show-hide {
     width: auto;
+    height: 41px;
     padding: 0 5px;
     background: #ffffff;
     color: #146aae;
@@ -230,9 +231,15 @@ img.userpicture {
 }
 
 #region-main-box {
-	top: -22px !important;
+	top: -21px !important;
 }
 
 .card-block {
-	padding: 5px 20px 25px 10px !important;
+	padding: 10px 10px 20px 10px !important;
+}
+
+.card-title {
+	color: #146aae !important;
+	text-align: center !important;
+  margin-bottom: 0px !important;
 }
