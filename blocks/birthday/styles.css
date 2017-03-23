@@ -1,6 +1,8 @@
 .block_birthday .content .list li.listentry {clear:both;}
 .block_birthday .content .list li.listentry .user {float:left;position:relative;}
-.block_birthday .content .list li.listentry .message {float:right;}
+.block_birthday .content .list li.listentry .message {float:none;}
+.block_birthday .content .list li.listentry .message a > img.iconsmall {float:right; width: 20px;}
+
 .block_birthday .content .info {text-align:center;}
 
 .dir-rtl .block_birthday .content .list li.listentry .user {float:right;}

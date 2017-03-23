@@ -153,8 +153,7 @@ class block_birthday extends block_base {
                 $canshowicon = false;
             }
 
-            $this->content->text = '<div class="info">'
-            .get_string('blocktitle', 'block_birthday').'</div>';
+            $this->content->text = '<div class="info">'.get_string('blocktitle', 'block_birthday').'</div>';
             $userdate = usergetdate(time(), $timezone);
             $usermonth = $userdate['mon'];
             $userday = $userdate['mday'];
@@ -164,13 +163,12 @@ class block_birthday extends block_base {
                 ++$usercount;
                 if (!(($usermonth==$user->month) && ($userday== $user->day))) {
                     if ($usercount==1) {
-                        $this->content->text .= '<li class="listentry">'
-                        .get_string('nobirthdaystoday', 'block_birthday').'</li>';
+                        $this->content->text .= '<li class="listentry">'.get_string('nobirthdaystoday', 'block_birthday').'</li>';
                     }
-                    $this->content->text .= '</ul><div class="clearer"><!-- --></div>'
-                    .'<div class="info">'
+                    /*$this->content->text .= '</ul><div class="clearer"><!-- --></div>'
+                    .'<div class="info" id="fucker">'
                         .userdate($user->data, get_string('strftimedate', 'block_birthday'))
-                        .'</div><ul class="list">';
+                    .'</div><ul class="list">';*/
                     $usermonth=$user->month;
                     $userday=$user->day;
                 }
@@ -184,12 +182,12 @@ class block_birthday extends block_base {
                     .$OUTPUT->user_picture($user, array('size'=>16));
                     $this->content->text .= '<a href="'.$CFG->wwwroot.'/user/view.php?id='.$user->id
                         .'&amp;course='.$this->page->course->id.'" title="'
-                        .$user->fullname.'">'.$user->fullname.'</a></div>';
+                        .$user->fullname.'">'.$user->fullname.'</a>'.' ('.userdate($user->data, get_string('strftimedate', 'block_birthday')).')'.'</div>';
                 }
                 // Only when logged in and messaging active etc
                 if ($canshowicon and ($USER->id != $user->id) and !isguestuser($user)) {
                     $anchortagcontents = '<img class="iconsmall" src="'
-                    .$OUTPUT->pix_url('t/message')
+                    .$OUTPUT->pix_url('t/message-two')
                         . '" alt="'. get_string('messageselectadd') .'" />';
                         $anchortag = '<a href="'.$CFG->wwwroot.'/message/index.php?id='
                         .$user->id.'" title="'

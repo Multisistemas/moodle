@@ -142,9 +142,8 @@ img.userpicture {
     width: auto;
     height: 41px;
     padding: 0 5px;
-    background: #ffffff;
     color: #146aae;
-    border: 1px solid #146aae;
+    border: 1px solid #ffffff !important;
     outline: 0 !important;
     border-radius: 0;
 }
@@ -224,6 +223,8 @@ img.userpicture {
 
 .block_online_users, .block_calendar_month, .block_calendar_upcoming, .block_birthday {
 	border: 1px solid #f2f2f2 !important;
+	border-radius: 5px !important;
+	background-color: rgb(236, 238, 239) !important;
 }
 
 .m-l-1 {
@@ -242,4 +243,10 @@ img.userpicture {
 	color: #146aae !important;
 	text-align: center !important;
   margin-bottom: 0px !important;
+}
+
+.btn-secondary {
+	color: #ffffff !important;
+	background-color: #146aae !important;
+	border: 1px solid #146aae; 
 }
