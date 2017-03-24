@@ -250,3 +250,26 @@ img.userpicture {
 	background-color: #146aae !important;
 	border: 1px solid #146aae; 
 }
+
+.forumpost .header {
+	margin-bottom: 0px !important;
+  background-color: rgba(144, 202, 249, 0.37);
+  border-radius: 6px 6px 0px 0px;
+  padding: 8px;
+  border: 1px solid rgba(144, 202, 249, 0.37);
+}
+
+.forumpost .row.maincontent {
+	border-left: 1px solid rgba(144, 202, 249, 0.37);
+  border-right: 1px solid rgba(144, 202, 249, 0.37);
+}
+
+.forumpost .row.side {
+	clear: both;
+  border-top: none;
+  padding: 6px;
+  border-radius: 0px 0px 6px 6px;
+  border: 1px solid #eceeef;
+  background-color: #eceeef;
+}
+
