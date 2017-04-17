@@ -73,6 +73,9 @@ class block_multitab extends block_base {
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#drive" role="tab">Drive</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#requests" role="tab">Solicitudes</a>
+              </li>
             </ul>
 
             <div class="tab-content">
@@ -84,6 +87,9 @@ class block_multitab extends block_base {
               </div>
               <div class="tab-pane fade" id="drive" role="tabpanel">
                 <iframe src="https://drive.google.com/drive/" style="width:100%; height:800px;" height="800" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
+              </div>
+              <div class="tab-pane fade" id="requests" role="tabpanel">
+                <iframe src="http://multisistemas.com.sv/request-forms" style="width:100%; height:800px;" height="800" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
               </div>
             </div>';
 
