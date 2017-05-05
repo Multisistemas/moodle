@@ -1,6 +1,39 @@
 window.onload = function (){
 	// For button hide-show left
 	require(['jquery'], function($){
+
+		var thewidth = $(window).width();
+
+		// For displays < 760px
+
+		if(thewidth < 760){
+
+			var panel = $("#nav-drawer");
+	    var body = $(".drawer-open-left");
+	    var media_body = document.getElementsByClassName("media-body");
+			var array = jQuery.makeArray(media_body);
+
+			panel.css({
+				'width' : '50px',
+			});
+			body.css({
+				'margin-left': '50px',
+			});
+
+			for (i in array) {
+				var temp = $(array[i]);
+			}
+
+			view_icon();
+
+			$('#btn-show-hide').css({
+				'display' : 'none'
+			});
+		}
+
+	});
+
+	require(['jquery'], function($){
 		var span = $("#rows");
 		var panel = $("#nav-drawer");
 
