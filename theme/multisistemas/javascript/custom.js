@@ -58,27 +58,27 @@ function view_icon(){
 		for (i in array1) {
 			var temp = $(array2[i]);
     	if (array1[i].innerHTML == "Home" || array1[i].innerHTML == "Página Principal") {
-    		var img = "<img class='icon smallicon' src='../pix/i/home.svg'>";
+    		var img = "<img class='icon smallicon' src='/theme/multisistemas/pix/home.svg'>";
     		array2[i].innerHTML = img;
     		temp.fadeIn("slow");
     	} else if (array1[i].innerHTML == "Dashboard" || array1[i].innerHTML == "Área personal") {
-    		var img = "<img class='icon smallicon' src='../pix/i/course.svg'>";
+    		var img = "<img class='icon smallicon' src='/theme/multisistemas/pix/course.svg'>";
     		array2[i].innerHTML = img;
     		temp.fadeIn("slow");
     	} else if (array1[i].innerHTML == "Calendar" || array1[i].innerHTML == "Calendario") {
-    		var img = "<img class='icon smallicon' src='../pix/i/calendar-new.svg'>";
+    		var img = "<img class='icon smallicon' src='/theme/multisistemas/pix/calendar-new.svg'>";
     		array2[i].innerHTML = img;
     		temp.fadeIn("slow");
     	} else if (array1[i].innerHTML == "Private files" || array1[i].innerHTML == "Ficheros privados") {
-    		var img = "<img class='icon smallicon' src='../pix/i/upload-folder.svg'>";
+    		var img = "<img class='icon smallicon' src='/theme/multisistemas/pix/upload-folder.svg'>";
     		array2[i].innerHTML = img;
     		temp.fadeIn("slow");
     	} else if (array1[i].innerHTML == "Site administration" || array1[i].innerHTML == "Administración del sitio") {
-    		var img = "<img class='icon smallicon' src='../pix/i/cog-wheel.svg'>";
+    		var img = "<img class='icon smallicon' src='/theme/multisistemas/pix/cog-wheel.svg'>";
     		array2[i].innerHTML = img;
     		temp.fadeIn("slow");
     	} else {
-    		var img = "<img class='icon smallicon' src='../pix/i/test.svg'>";
+    		var img = "<img class='icon smallicon' src='/theme/multisistemas/pix/test.svg'>";
     		array2[i].innerHTML = img;
     		temp.fadeIn("slow");
     	}
