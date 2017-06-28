@@ -65,32 +65,31 @@ class block_multitab extends block_base {
             $text = '
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
-                <a class="nav-link  active" data-toggle="tab" href="#requests" role="tab">Solicitudes</a>
+                <a class="nav-link active" aria-expanded="false" data-toggle="tab" href="#requests" role="tab">Solicitudes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#wiki" role="tab">Wiki</a>
+                <a class="nav-link" aria-expanded="true" data-toggle="tab" href="#erp" role="tab">ERP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#erp" role="tab">ERP</a>
+                <a class="nav-link" aria-expanded="false" data-toggle="tab" href="#drive" role="tab">Drive</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#drive" role="tab">Drive</a>
+                <a class="nav-link" aria-expanded="false" data-toggle="tab" href="#wiki" role="tab">Wiki</a>
               </li>
             </ul>
-
             <div class="tab-content">
-              <div class="tab-pane fade active" id="requests" role="tabpanel">
+              <div class="tab-pane fade active in" id="requests" role="tabpanel">
                 <iframe src="https://multisistemas.com.sv/request-forms" style="width:100%; height:800px;" height="800px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
-              </div>
-              <div class="tab-pane fade" id="wiki" role="tabpanel">
-                <iframe src="https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=https%3A%2F%2Fmseicorp.com%2Fwiki%2Fdoku.php%2Fstart%3Fdo%3Dlogin&client_id=759994973962-nr1s2n4i57bj13tsovhje7q563g062dq.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&access_type=online&approval_prompt=auto&state=" style="width:100%; height:800px;" height="800px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
               </div>
               <div class="tab-pane fade" id="erp" role="tabpanel">
                 <iframe src="https://mseicorp.com/erp/index.php/google" style="width:100%; height:800px;" height="800px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
               </div>
               <div class="tab-pane fade" id="drive" role="tabpanel">
                 <iframe src="https://drive.google.com/drive/" style="width:100%; height:800px;" height="800px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
-              </div>    
+              </div>
+              <div class="tab-pane fade" id="wiki" role="tabpanel">
+                <iframe src="https://mseicorp.com/wiki/doku.php/start" style="width:100%; height:800px;" height="800px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
+              </div>  
             </div>';
 
             $this->content->text = $text;
